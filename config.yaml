@@ -1,0 +1,14 @@
+api_url: ${CS_API_URL}
+api_key: ${CS_API_KEY}
+
+ip_tables:
+  ipv4:
+    enabled: true
+  ipv6:
+    enabled: false
+
+mode: iptables
+update_frequency: 30s
+
+log_level: info
+log_mode: stdout

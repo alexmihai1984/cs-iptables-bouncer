@@ -16,4 +16,4 @@ RUN apt-get clean \
 RUN mkdir -p /etc/crowdsec/bouncers /var/log/crowdsec
 COPY config.yaml /etc/crowdsec/bouncers/
 
-CMD ["crowdsec-firewall-bouncer", "-c", "/etc/crowdsec/bouncers/crowdsec-cloudflare-bouncer.yaml"]
+CMD ["crowdsec-firewall-bouncer", "-c", "/etc/crowdsec/bouncers/crowdsec-iptables-bouncer.yaml"]
